@@ -1,9 +1,6 @@
 ---
-title: Integrate with Red Hat Ansible Automation Platform / AWX
-sidebar_label: Red Hat Ansible Automation Platform / AWX
+title: Red Hat Ansible Automation Platform / AWX
 ---
-
-# Red Hat Ansible Automation Platform / AWX
 
 <span class="badge badge--secondary"></span>
 

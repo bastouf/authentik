@@ -9,8 +9,8 @@ class ApplicationsListPage extends AdminPage {
      * define selectors using getter methods
      */
 
-    async startWizardButton() {
-        return await $("ak-application-wizard").$('button[slot="trigger"]');
+    get startWizardButton() {
+        return $('>>>ak-wizard-frame button[slot="trigger"]');
     }
 
     async open() {

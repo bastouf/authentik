@@ -1,9 +1,6 @@
 ---
-title: Integrate with Wiki.js
-sidebar_label: Wiki.js
+title: Wiki.js
 ---
-
-# Wiki.js
 
 <span class="badge badge--secondary">Support level: Community</span>
 

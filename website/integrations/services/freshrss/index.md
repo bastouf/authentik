@@ -1,9 +1,6 @@
 ---
-title: Integrate with FreshRSS
-sidebar_label: FreshRSS
+title: FreshRSS
 ---
-
-# FreshRSS
 
 <span class="badge badge--secondary">Support level: Community</span>
 

@@ -1,9 +1,6 @@
 ---
-title: Integrate with Synology DSM (DiskStation Manager)
-sidebar_label: Synology DSM (DiskStation Manager)
+title: Synology DSM (DiskStation Manager)
 ---
-
-# Synology DSM (DiskStation Manager)
 
 <span class="badge badge--secondary">Support level: Community</span>
 

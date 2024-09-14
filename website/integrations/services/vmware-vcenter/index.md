@@ -1,9 +1,6 @@
 ---
-title: Integrate with VMware vCenter
-sidebar_label: VMware vCenter
+title: VMware vCenter
 ---
-
-# VMware vCenter
 
 <span class="badge badge--secondary">Support level: Community</span>
 

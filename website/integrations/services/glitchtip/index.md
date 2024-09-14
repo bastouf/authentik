@@ -1,9 +1,6 @@
 ---
-title: Integrate with Glitchtip
-sidebar_label: Glitchtip
+title: Glitchtip
 ---
-
-# Glitchtip
 
 <span class="badge badge--secondary">Support level: Community</span>
 

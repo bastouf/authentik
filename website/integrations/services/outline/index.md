@@ -1,9 +1,6 @@
 ---
-title: Integrate with Outline
-sidebar_label: Outline
+title: Outline
 ---
-
-# Outline
 
 <span class="badge badge--secondary">Support level: Community</span>
 

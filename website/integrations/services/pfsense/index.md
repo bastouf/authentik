@@ -1,9 +1,6 @@
 ---
-title: Integrate with pfSense
-sidebar_label: pfSense
+title: pfSense
 ---
-
-# pfSense
 
 <span class="badge badge--secondary">Support level: Community</span>
 

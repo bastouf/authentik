@@ -1,9 +1,6 @@
 ---
-title: Integrate with Writefreely
-sidebar_label: Writefreely
+title: Writefreely
 ---
-
-# Writefreely
 
 <span class="badge badge--secondary">Support level: Community</span>
 

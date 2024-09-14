@@ -1,9 +1,6 @@
 ---
-title: Integrate with NetBox
-sidebar_label: NetBox
+title: NetBox
 ---
-
-# NetBox
 
 <span class="badge badge--secondary">Support level: Community</span>
 

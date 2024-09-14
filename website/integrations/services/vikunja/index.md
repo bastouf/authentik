@@ -1,9 +1,6 @@
 ---
-title: Integrate with Vikunja
-sidebar_label: Vikunja
+title: Vikunja
 ---
-
-# Vikunja
 
 <span class="badge badge--secondary">Support level: Community</span>
 

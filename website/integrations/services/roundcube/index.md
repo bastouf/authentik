@@ -1,9 +1,6 @@
 ---
-title: Integrate with Roundcube
-sidebar_label: Roundcube
+title: Roundcube
 ---
-
-# Roundcube
 
 <span class="badge badge--secondary">Support level: Community</span>
 

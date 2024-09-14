@@ -1,9 +1,6 @@
 ---
-title: Integrate with Mobilizon
-sidebar_label: Mobilizon
+title: Mobilizon
 ---
-
-# Mobilizon
 
 <span class="badge badge--secondary">Support level: Community</span>
 

@@ -1,5 +1,4 @@
 import { browser } from "@wdio/globals";
-import { Key } from "webdriverio";
 
 const CLICK_TIME_DELAY = 250;
 
@@ -12,15 +11,15 @@ export default class Page {
      * Opens a sub page of the page
      * @param path path of the sub page (e.g. /path/to/page.html)
      */
-    public async open(path: string) {
-        return await browser.url(`http://localhost:9000/${path}`);
+    public open(path: string) {
+        return browser.url(`http://localhost:9000/${path}`);
     }
 
-    public async pause(selector?: string) {
+    public pause(selector?: string) {
         if (selector) {
-            return await $(selector).waitForDisplayed();
+            return $(selector).waitForDisplayed();
         }
-        return await browser.pause(CLICK_TIME_DELAY);
+        return browser.pause(CLICK_TIME_DELAY);
     }
 
     /**
@@ -34,20 +33,10 @@ export default class Page {
 
     async searchSelect(searchSelector: string, managedSelector: string, buttonSelector: string) {
         const inputBind = await $(searchSelector);
-        const inputMain = await inputBind.$('input[type="text"]');
-        await inputMain.click();
-        const searchBlock = await (
-            await $(`div[data-managed-for="${managedSelector}"]`).$("ak-list-select")
-        ).shadow$$("button");
-        let target: WebdriverIO.Element;
-        for (const button of searchBlock) {
-            if ((await button.getText()).includes(buttonSelector)) {
-                target = button;
-                break;
-            }
-        }
-        await (await target).click();
-        await browser.keys(Key.Tab);
+        await inputBind.click();
+        const searchBlock = await $(`>>>div[data-managed-for="${managedSelector}"]`);
+        const target = searchBlock.$(buttonSelector);
+        return await target.click();
     }
 
     public async logout() {

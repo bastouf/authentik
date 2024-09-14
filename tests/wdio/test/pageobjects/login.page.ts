@@ -9,20 +9,20 @@ class LoginPage extends Page {
     /**
      * Selectors
      */
-    async inputUsername() {
-        return await $('input[name="uidField"]');
+    get inputUsername() {
+        return $('>>>input[name="uidField"]');
     }
 
-    async inputPassword() {
-        return await $('input[name="password"]');
+    get inputPassword() {
+        return $('>>>input[name="password"]');
     }
 
-    async btnSubmit() {
-        return await $('button[type="submit"]');
+    get btnSubmit() {
+        return $('>>>button[type="submit"]');
     }
 
-    async authFailure() {
-        return await $(".pf-m-error");
+    get authFailure() {
+        return $(">>>h4.pf-c-alert__title");
     }
 
     /**
@@ -30,15 +30,17 @@ class LoginPage extends Page {
      */
 
     async username(username: string) {
-        await (await this.inputUsername()).setValue(username);
-        await (await this.btnSubmit()).waitForEnabled();
-        await (await this.btnSubmit()).click();
+        await this.inputUsername.waitForClickable();
+        await this.inputUsername.setValue(username);
+        await this.btnSubmit.waitForEnabled();
+        await this.btnSubmit.click();
     }
 
     async password(password: string) {
-        await (await this.inputPassword()).setValue(password);
-        await (await this.btnSubmit()).waitForEnabled();
-        await (await this.btnSubmit()).click();
+        await this.inputPassword.waitForClickable();
+        await this.inputPassword.setValue(password);
+        await this.btnSubmit.waitForEnabled();
+        await this.btnSubmit.click();
     }
 
     async login(username: string, password: string) {
@@ -46,7 +48,7 @@ class LoginPage extends Page {
         await this.pause();
         await this.password(password);
         await this.pause();
-        await this.pause("div.header h1");
+        await this.pause(">>>div.header h1");
         return UserLibraryPage;
     }
 

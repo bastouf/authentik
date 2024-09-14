@@ -1,9 +1,6 @@
 ---
-title: Integrate with Firezone
-sidebar_label: Firezone
+title: Firezone
 ---
-
-# Firezone
 
 <span class="badge badge--secondary">Support level: Community</span>
 

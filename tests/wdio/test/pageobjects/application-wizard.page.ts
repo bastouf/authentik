@@ -27,24 +27,24 @@ class ApplicationWizardView extends AdminPage {
     radius = RadiusForm;
     app = ApplicationForm;
 
-    async wizardTitle() {
-        return await $("ak-wizard-frame").$(".pf-c-wizard__title");
+    get wizardTitle() {
+        return $(">>>ak-wizard-frame .pf-c-wizard__header h1.pf-c-title");
     }
 
-    async providerList() {
-        return await $("ak-application-wizard-authentication-method-choice");
+    get providerList() {
+        return $(">>>ak-application-wizard-authentication-method-choice");
     }
 
-    async nextButton() {
-        return await $("ak-wizard-frame").$("footer button.pf-m-primary");
+    get nextButton() {
+        return $(">>>ak-wizard-frame footer button.pf-m-primary");
     }
 
     async getProviderType(type: string) {
-        return await this.providerList().$(`input[value="${type}"]`);
+        return await this.providerList.$(`>>>input[value="${type}"]`);
     }
 
-    async successMessage() {
-        return await $('[data-commit-state="success"]');
+    get successMessage() {
+        return $('>>>[data-commit-state="success"]');
     }
 }
 
@@ -65,10 +65,8 @@ const providerValues: Pair[] = [
 providerValues.forEach(([value, name]: Pair) => {
     Object.defineProperties(ApplicationWizardView.prototype, {
         [name]: {
-            get: async function () {
-                return await (
-                    await this.providerList()
-                ).$(`div[data-ouid-component-name="${value}"]`);
+            get: function () {
+                return this.providerList.$(`>>>input[value="${value}"]`);
             },
         },
     });

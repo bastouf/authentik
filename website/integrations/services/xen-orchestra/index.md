@@ -1,9 +1,6 @@
 ---
-title: Integrate with Xen Orchestra
-sidebar_label: Xen Orchestra
+title: Xen Orchestra
 ---
-
-# Xen Orchestra
 
 <span class="badge badge--secondary">Support level: Community</span>
 

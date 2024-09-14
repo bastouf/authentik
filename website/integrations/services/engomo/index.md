@@ -1,9 +1,6 @@
 ---
-title: Integrate with engomo
-sidebar_label: engomo
+title: engomo
 ---
-
-# engomo
 
 <span class="badge badge--secondary">Support level: Community</span>
 

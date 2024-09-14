@@ -1,9 +1,6 @@
 ---
-title: Integrate with WordPress
-sidebar_label: WordPress
+title: WordPress
 ---
-
-# WordPress
 
 <span class="badge badge--secondary">Support level: Community</span>
 
@@ -38,7 +35,6 @@ Only settings that have been modified from default have been listed.
 -   Client ID: Copy and Save this for Later
 -   Client Secret: Copy and Save this for later
 -   Redirect URIs/Origins: `https://wp.company/wp-admin/admin-ajax.php\?action=openid-connect-authorize`
--   Scopes: _email_, _offline_access_, _openid_, _profile_
 
 ### Step 2 - WordPress
 
@@ -55,15 +51,11 @@ Only settings that have been modified from default have been listed.
 -   Login Type: OpenID Connect Button on Login (This option display a button to login using OpenID as well as local WP login)
 -   Client ID: Client ID from step 1
 -   Client Secret: Client Secret from step 1
--   OpenID Scope: `email profile openid offline_access`
+-   OpenID Scope: `email profile openid`
 -   Login Endpoint URL: `https://authentik.company/application/o/authorize/`
 -   Userinfo Endpoint URL: `https://authentik.company/application/o/userinfo/`
 -   Token Validation Endpoint URL: `https://authentik.company/application/o/token/`
 -   End Session Endpoint URL: `https://authentik.company/application/o/wordpress/end-session/`
-
-:::note
-Make sure to include the _offline_access_ scope to ensure refresh tokens are generated. Otherwise your session will expire and force users to manually log in again. Refer to the [OpenID Connect Core specification](https://openid.net/specs/openid-connect-core-1_0.html#OfflineAccess) for more information.
-:::
 
 :::note
 Review each setting and choose the ones that you require for your installation. Examples of popular settings are _Link Existing Users_, _Create user if does not exist_, and _Enforce Privacy_

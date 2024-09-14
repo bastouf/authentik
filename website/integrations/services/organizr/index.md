@@ -1,9 +1,6 @@
 ---
-title: Integrate with organizr
-sidebar_label: organizr
+title: organizr
 ---
-
-# organizr
 
 <span class="badge badge--secondary">Support level: Community</span>
 

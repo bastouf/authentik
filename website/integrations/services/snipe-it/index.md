@@ -1,9 +1,6 @@
 ---
-title: Integrate with Snipe-IT
-sidebar_label: Snipe-IT
+title: Snipe-IT
 ---
-
-# Snipe-IT
 
 <span class="badge badge--secondary">Support level: Community</span>
 
